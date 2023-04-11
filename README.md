@@ -8,6 +8,8 @@ Reaching the designed resolution of MVTX is critical to the delivery of sPHENIX 
 We present the construction and $\sim$ 20 $\mu \text{m}$-level mechanical alignment in the carbon composite support structure.
 
 ## Quick start
+- Warning: You can modify this code to use but right now, this is very much MVTX alignment/assembly oriented. i.e. It works very quickly on the fly where you CMM-measure and use the data with its specific print format.
+
 It requires c++11.
 Please modify the Makefile accordingly to your system.
 Will include docker image in the future.
@@ -40,7 +42,7 @@ Need to align the NEW and the SEW with $\sim$ 20 $\mu m$ accuracy.
 <div id="detector-alignment-challenge">
 <img src="https://github.com/gboon18/MVTX/blob/main/images/Alignment_challenge.png?raw=true" alt="Detector Alignment Challenge"> 
 </div>
-How will you achieve a 20 $\mu$m accuracy over 50 cm? There is no flat face perpendicular or parallel to the earth or fiducial markers measureable during the assembly process.
+How will you achieve a 20 $\mu m$ accuracy over 50 cm? There is no flat face perpendicular or parallel to the earth or fiducial markers measureable during the assembly process.
 
 $\Rightarrow$ How do we determine the complete pose (position and orientation) of the detector parts? All you have is a Coordinate Measuring Machine with $\sim$ 2 micron precision.
 
@@ -48,6 +50,3 @@ $\Rightarrow$ How do we determine the complete pose (position and orientation) o
 The answer is multiple CMM probing of many faces the parts.
 Then we perform a conjugate gradient minimization (see the [reference](https://scripts.iucr.org/cgi-bin/paper?S0567739482001806))
 on the CMM points to the CAD model to find the translation and rotation value from the part position to the model "ideal" position.
-
-## How to run
-- Warning: You can modify this code to use but right now, this is very much MVTX alignment/assembly oriented. i.e. It works very quickly on the fly where you CMM-measure and use the data with its specific print format.
