@@ -22,7 +22,7 @@ There are 12 parts: 3 layers (L0, L1, L2) X North and South End Wheel (NEW, SEW)
 The output will give rotational values ($\alpha$, $\beta$, and $\gamma$: "a", "b", and "g") and translational values ($xt$, $yt$, and $zt$).
 
 ## TLDC (Too Long Don't Care) of the MVTX alignment
-<img src="https://github.com/gboon18/MVTX/blob/main/images/Alignment_challenge.png" alt="Detector Alignment Challenge"> 
+
 How will you achieve a 20 $\mu$m accuracy over 50 cm? There is no flat face perpendicular or parallel to the earth or fiducial markers measureable during the assembly process.
 
 $\Rightarrow$ How do we determine the complete pose (position and orientation) of the detector parts? All you have is a Coordinate Measuring Machine with $\sim$ 2 micron precision.
