@@ -30,6 +30,7 @@ The output will give rotational values ($\alpha$, $\beta$, and $\gamma$: "a", "b
 [See the figure below](#detector-alignment-challenge).
 
 ## TLDC (Too Long Don't Care) of the MVTX alignment
+- Align and assemble parts: 6 degrees of freedom that is $\sim$ 50 cm apart in $\sim$ 20 $\mu m$ accuracy.
 <div id="mvtx-assembly">
 <img src="https://github.com/gboon18/MVTX/blob/main/images/MVTX_assembly.png?raw=true" alt="MVTX assembly"> 
 </div>
