@@ -51,3 +51,16 @@ $\Rightarrow$ How do we determine the complete pose (position and orientation) o
 The answer is multiple CMM probing of many faces the parts.
 Then we perform a conjugate gradient minimization (see the [reference](https://scripts.iucr.org/cgi-bin/paper?S0567739482001806))
 on the CMM points to the CAD model to find the translation and rotation value from the part position to the model "ideal" position.
+
+## Accompanying advantage of the global alignment using a CMM
+By measuring multiple faces of the part, the fitting of the CMM points to the model part gives us the fit residual.
+<div id="fit-residual">
+<img src="https://github.com/gboon18/MVTX/blob/main/images/Fit_residuals.png?raw=true" alt="Fit residual"> 
+</div>
+As an example, one of the endwheels (SEW of L2) residuals are plotted.
+The inverted "U" shape indicates that the measurement of the endwheel is sprining outward with respect to the model value.
+This was the most prominent for the L2 which is the largest endwheel.
+In our case, by epoxy bonding the endwheel to the carbon composite reduced this effect and we kept the hermiticity of the detector.
+
+## Assembly using kinematic mounts and CMM
+The optical
