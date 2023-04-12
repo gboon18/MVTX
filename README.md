@@ -63,4 +63,14 @@ This was the most prominent for the L2 which is the largest endwheel.
 In our case, by epoxy bonding the endwheel to the carbon composite reduced this effect and we kept the hermiticity of the detector.
 
 ## Assembly using kinematic mounts and CMM
-The optical
+The kinematic mounts allow us to precisely control each of the six degrees of freedom within a few microns.
+<div id="kinematic-mounts">
+<img src="https://github.com/gboon18/MVTX/blob/main/images/kinematic_mounts.png?raw=true" alt="Kinematic mounts">
+</div>
+We fix the SEW and determine it's pose with the CMM.
+Then we align the NEW pose to the SEW using the kinematic mounts.
+During this procedure, we use CMM but not the global alignment fitting procedure.
+This is possible since we are contolling only one degree of freedom at a time.
+Measureing two points and one point can determine the change of the rotation and the translation, respectively.
+
+By using the CMM measurements combined with the model fitting and the kinematic mounts, we can efficiently assemble a single half-layer within a few hours and a full three-layer half-MVTX detector within a week.
